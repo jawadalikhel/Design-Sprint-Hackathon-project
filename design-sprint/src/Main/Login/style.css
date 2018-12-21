@@ -1,0 +1,36 @@
+#LoginContainer {
+  position: absolute;
+  /* background-color: red; */
+  width: 47.4em;
+  height: 63.3em;
+}
+
+.title h1{
+  background-color: red;
+  font-size: 3em;
+  width: 10em;
+  margin: auto;
+  /* margin-top: 5em; */
+}
+
+.logo {
+  position: absolute;
+  /* background-color: blue; */
+  width: 47.4em;
+  margin-top: 20em;
+  margin-left: -23.7em;
+}
+
+.form {
+  background-color: green;
+  position: absolute;
+  width: 47.4em;
+  margin-top: 5em;
+}
+
+.input {
+  /* background-color: blue; */
+  border: 1px solid black;
+  width: 60em;
+  height: 5em;
+}
