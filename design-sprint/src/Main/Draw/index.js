@@ -6,6 +6,7 @@ class Draw extends Component{
     return(
       <div>
         <h1>Draw</h1>
+        <iframe className="sketchPad" height="900px" width="700px" src="https://drawisland.com/"></iframe>
       </div>
     )
   }

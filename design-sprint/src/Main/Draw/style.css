@@ -1,0 +1,12 @@
+#draw {
+  background-color: lightblue;
+  height: 50em;
+}
+
+.sketchPad {
+  /* background-color: red; */
+  /* position: absolute; */
+  width: 45em;
+  height: 65em;
+  /* margin-left: -23em; */
+}
