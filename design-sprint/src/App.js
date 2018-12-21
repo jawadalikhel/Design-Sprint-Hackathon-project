@@ -4,7 +4,8 @@ import { Route, BrowserRouter as Router } from 'react-router-dom'
 import Login from './Main/Login';
 import FindTeam from './Main/FindTeam';
 import Task from './Main/Task';
-
+import Draw from './Main/Draw';
+import Vote from './Main/Vote';
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
           <Route path="/login" component={Login} />
           <Route path="/team" component={FindTeam} />
           <Route path="/task" component={Task} />
+          <Route path="/draw" component={Draw} />
+          <Route path="/vote" component={Vote} />
         </div>
       </Router>
       </div>
