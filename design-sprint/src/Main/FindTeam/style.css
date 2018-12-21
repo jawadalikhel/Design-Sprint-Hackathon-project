@@ -1,0 +1,49 @@
+#row {
+}
+
+#column {
+  background-color: #aaa;
+  float: left;
+  width: 10em;
+  height: 10em;
+  margin-left: 4em;
+  margin-top: 4em;
+}
+
+.quextionMark {
+  position: absolute;
+  margin-left: .8em;
+  margin-top: .3em;
+  font-size: 5em;
+}
+
+#column2 {
+  /* background-color: #aaa; */
+  float: left;
+  width: 10em;
+  margin-left: 4em;
+  /* margin-top: .5em; */
+
+}
+
+#friends {
+  /* background-color: red; */
+  margin-top: 5em;
+  /* height: 40em; */
+}
+
+.start {
+  background-color: #4A4A4A;
+  position: absolute;
+  color: #FFFFFF;
+  border-radius: .5em;
+  margin-top: 15em;
+  margin-left: -9em;
+  width: 10em;
+  /* height: 15em; */
+  font-size: 2.5em;
+}
+
+.start:hover {
+  color: grey;
+}

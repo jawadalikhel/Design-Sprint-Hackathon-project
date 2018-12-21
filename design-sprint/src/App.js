@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import Main from './Main';
+import { Route, BrowserRouter as Router } from 'react-router-dom'
+import Login from './Main/Login';
+import FindTeam from './Main/FindTeam';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main />
+      <Router>
+        <div>
+          <Route path="/login" component={Login} />
+          <Route path="/team" component={FindTeam} />
+        </div>
+      </Router>
       </div>
     );
   }

@@ -5,12 +5,12 @@ class Login extends Component{
   render(){
     return(
       <div id ="LoginContainer">
-        <h1 id="title">Design Sprint</h1>
+        <h1 className="title">Design Sprint</h1>
 
         <form className="form">
           <input className="input" type="text" placeholder="Lesson Code" /><br /><br />
           <input className="input" type="text" placeholder="Enter Username" /><br />
-          <a href="#">No Code? Create one</a>
+          <a href="#" className="newCode">No Code? Create one</a>
         </form>
 
         <svg className="logo" width="651px" height="464px" viewBox="0 0 651 464">
@@ -45,6 +45,8 @@ class Login extends Component{
               </g>
           </g>
         </svg>
+
+        <button className='findTeam'>FIND YOUR TEAM</button>
       </div>
     )
   }
