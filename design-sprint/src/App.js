@@ -3,6 +3,8 @@ import './App.css';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import Login from './Main/Login';
 import FindTeam from './Main/FindTeam';
+import Task from './Main/Task';
+
 
 class App extends Component {
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
         <div>
           <Route path="/login" component={Login} />
           <Route path="/team" component={FindTeam} />
+          <Route path="/task" component={Task} />
         </div>
       </Router>
       </div>
