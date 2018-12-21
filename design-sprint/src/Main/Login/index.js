@@ -5,7 +5,7 @@ class Login extends Component{
   render(){
     return(
       <div id ="LoginContainer">
-        <h1 className="title">Design Sprint</h1>
+        <h1 id="title">Design Sprint</h1>
 
         <form className="form">
           <input className="input" type="text" placeholder="Lesson Code" /><br /><br />
