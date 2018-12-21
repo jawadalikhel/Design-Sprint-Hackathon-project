@@ -5,7 +5,8 @@
 }
 
 #Tcolumn {
-  background-color: #aaa;
+  background-color: silver;
+  border-radius: 1em;
   float: left;
   width: 15em;
   height: 30em;
