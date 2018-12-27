@@ -12,7 +12,7 @@
   width: 9.6em;
   margin: auto;
   /* margin-left: -.4em; */
-  margin-top: .7em;
+  margin-top: .2em;
   font-size: 5em;
 }
 
@@ -45,9 +45,9 @@
 .logo {
   position: absolute;
   /* background-color: blue; */
-  width: 34em;
+  width: 35em;
   margin-top: 20em;
-  margin-left: -15em;
+  margin-left: -17em;
 }
 
 .findTeam {

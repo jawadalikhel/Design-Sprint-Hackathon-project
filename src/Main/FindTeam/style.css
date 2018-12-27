@@ -1,34 +1,6 @@
-#row {
-}
-
-/* #column {
-  background-color: #aaa;
-  float: left;
-  width: 10em;
-  height: 10em;
-  margin-left: 4em;
-  margin-top: 10em;
-} */
-
-/* .quextionMark {
-  position: absolute;
-  margin-left: .8em;
-  margin-top: .3em;
-  font-size: 5em;
-} */
-
-#column2 {
-  /* background-color: #aaa; */
-  /* float: left;
-  width: 10em;
-  margin-left: 4em; */
-  /* margin-top: .5em; */
-
-}
-
 #friends {
   /* background-color: red; */
-  margin-top: 20em;
+  margin-top: 15em;
   /* height: 40em; */
 }
 
@@ -45,7 +17,7 @@
   position: absolute;
   color: #FFFFFF;
   border-radius: .5em;
-  margin-top: 22em;
+  margin-top: 19.5em;
   margin-left: -9em;
   width: 10em;
   /* height: 15em; */

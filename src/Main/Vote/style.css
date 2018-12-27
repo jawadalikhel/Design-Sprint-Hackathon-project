@@ -3,14 +3,13 @@ header {
   position: absolute;
   width: 32em;
   margin: auto;
-  margin-top: .5em;
+  margin-top: -1em;
   font-size: 1.5em;
 }
 
 #Vrow {
-  background-color: green;
   position: absolute;
-  margin-top: -4em;
+  margin-top: -7em;
 }
 
 .Vcolumn {
@@ -268,7 +267,7 @@ input[type='checkbox']:checked {
   position: absolute;
   color: #FFFFFF;
   border-radius: .5em;
-  margin-top: 23em;
+  margin-top: 20em;
   margin-left: -4em;
   width: 8em;
   height: 1.5em;

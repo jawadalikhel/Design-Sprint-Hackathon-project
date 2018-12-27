@@ -7,7 +7,10 @@ class Draw extends Component{
   render(){
     return(
       <div>
-        <h1>Build Your Prototype</h1>
+
+        <div id="whitespace">
+          <h1>Build Your Prototype</h1>
+        </div>
         <iframe className="sketchPad" src="https://drawisland.com/"></iframe>
         <a href="/vote"><button className="next">Next</button></a>
         <a href="/task"><button className="back">Back</button></a>
