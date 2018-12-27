@@ -41,7 +41,7 @@
   position: absolute;
   color: #FFFFFF;
   border-radius: .5em;
-  margin-top: 12em;
+  margin-top: 10.7em;
   margin-left: -3.3em;
   width: 7em;
   height: 1.5em;
@@ -66,7 +66,21 @@
   color: #FFFFFF;
   border-radius: .5em;
   margin-top: 18.3em;
-  margin-left: -2em;
+  margin-left: -5em;
+  width: 5em;
+  height: 1.5em;
+  padding: .2em;
+  /* height: 15em; */
+  font-size: 2.5em;
+}
+
+.back2team {
+  background-color: #4A4A4A;
+  position: absolute;
+  color: #FFFFFF;
+  border-radius: .5em;
+  margin-top: 18.3em;
+  margin-left: 1em;
   width: 5em;
   height: 1.5em;
   padding: .2em;

@@ -5,8 +5,7 @@ class Task extends Component{
   render(){
     return(
       <div>
-        <h1>Empathize & Define</h1>
-
+        <h1 id="empathizeHeader">Empathize & Define</h1>
         <div id="Trow">
           <div id="Tcolumn" >
             <h2>Persona</h2>
@@ -62,7 +61,7 @@ class Task extends Component{
         </svg>
 
         <a href="/draw"><button className='ideate'>IDEATE</button></a>
-
+        <a href="/team"><button className='back2team'>Back</button></a>
       </div>
     )
   }
