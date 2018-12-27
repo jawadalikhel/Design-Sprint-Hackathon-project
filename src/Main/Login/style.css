@@ -9,8 +9,9 @@
   /* background-color: red; */
   position: absolute;
   font-size: 3em;
-  width: 10em;
-  margin-left: -.4em;
+  width: 9.6em;
+  margin: auto;
+  /* margin-left: -.4em; */
   margin-top: .7em;
   font-size: 5em;
 }
@@ -19,7 +20,7 @@
   /* background-color: green; */
   position: absolute;
   width: 47.4em;
-  margin-top: 13em;
+  margin-top: 12em;
 }
 
 .input {
@@ -27,6 +28,7 @@
   border: 1px solid black;
   width: 22em;
   padding: .2em;
+  text-align: center;
   font-size: 2em;
 }
 
@@ -43,9 +45,9 @@
 .logo {
   position: absolute;
   /* background-color: blue; */
-  width: 47.4em;
-  margin-top: 25em;
-  margin-left: -23.7em;
+  width: 34em;
+  margin-top: 20em;
+  margin-left: -15em;
 }
 
 .findTeam {
@@ -53,7 +55,7 @@
   position: absolute;
   color: #FFFFFF;
   border-radius: .5em;
-  margin-top: 22.5em;
+  margin-top: 20em;
   margin-left: -5em;
   width: 10em;
   /* height: 15em; */

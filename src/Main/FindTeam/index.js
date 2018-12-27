@@ -37,7 +37,7 @@ class FindTeam extends Component {
             </g>
         </svg>
 
-        <button className='start'>GET STARTED</button>
+        <a href="/task"><button className='start'>GET STARTED</button></a>
 
       </div>
     )

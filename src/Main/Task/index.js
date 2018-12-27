@@ -61,7 +61,7 @@ class Task extends Component{
             </g>
         </svg>
 
-        <button className='ideate'>IDEATE</button>
+        <a href="/draw"><button className='ideate'>IDEATE</button></a>
 
       </div>
     )

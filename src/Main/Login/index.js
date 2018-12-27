@@ -46,7 +46,7 @@ class Login extends Component{
           </g>
         </svg>
 
-        <button className='findTeam'>FIND YOUR TEAM</button>
+        <a href="/team"><button className='findTeam'>FIND YOUR TEAM</button></a>
       </div>
     )
   }
