@@ -8,58 +8,26 @@ class Task extends Component{
       task: [
         {persona: 'Astronaut', problem: 'Astronaut House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Robot, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
         {persona: 'FireFighter', problem: 'Firefighter House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Truck, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'Doctor', problem: 'Doctor House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Surgery, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #1', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #1, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #2', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #2, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #3', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #3, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #4', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #4, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #5', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #5, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
       ],
       showTask: true,
     }
   }
 
   getRandomTask = () =>{
-    const randomTask = this.state.task[Math.floor(Math.random() * this.state.task.length)];
+    const randomTask = [this.state.task[Math.floor(Math.random() * this.state.task.length)]];
     // console.log(randomTask, 'there are all the tasks')
     // randomTask.forEach((index) =>{
     //   console.log(index, 'this is index')
     // })
     console.log(randomTask, '<---- random NEW task');
-    console.log(randomTask.persona);
-    console.log(randomTask.problem);
-    console.log(randomTask.subject);
-
-    return(
-      <div id="Trow">
-        <div id="Tcolumn" >
-          <h2>radnomTask.persona</h2>
-          <h1 className="TquextionMark">?</h1>
-          <p className="info">Astronaut<br/>
-            Lorem ipsum dolor sit
-            amet, consectetur adip
-            iscing elit, sed do
-          </p>
-        </div>
-
-        <div id="Tcolumn" >
-          <h2>Problem</h2>
-          <h1 className="TquextionMark">?</h1>
-          <p className="info">Astronaut<br/>
-          House
-            Lorem ipsum dolor sit
-            amet, consectetur adip
-            iscing elit, sed do
-          </p>
-        </div>
-
-        <div id="Tcolumn" >
-          <h2>Subject</h2>
-          <h1 className="TquextionMark">?</h1>
-          <p className="info">
-            Robot,<br/>
-            Lorem ipsum dolor sit
-            amet, consectetur adip
-            iscing elit, sed do
-          </p>
-        </div>
-      </div>
-    )
+    // console.log(randomTask[0].persona, 'persona');
+    // console.log(randomTask[0].problem, 'problem');
+    // console.log(randomTask[0].subject, 'subject');
   }
 
   render(){
@@ -69,7 +37,6 @@ class Task extends Component{
 
         {/* this button is to shhuffle the cards randomly */}
         <button className='shuffle' onClick={this.getRandomTask}>SHUFFLE</button>
-
 
         <svg className="fillIn" width="644px" height="139px" viewBox="0 0 644 139">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Avenir-Heavy, Avenir" font-size="27" font-weight="600">
