@@ -43,7 +43,7 @@ class Task extends Component{
                 <g id="3)-Empathize,-Define" transform="translate(-44.000000, -674.000000)" fill="#4A4A4A">
                     <text id="Your-task-is-to-help">
                         <tspan x="45" y="695">Your task is to help</tspan>
-                        <tspan x="286.461" y="695" font-family="Avenir-Book, Avenir" font-weight="normal"> ____(Persona)_________________</tspan>
+                        <tspan x="286.461" y="695" font-family="Avenir-Book, Avenir" font-weight="normal"> ____(Persona)________________</tspan>
                         <tspan x="45" y="732">with</tspan>
                         <tspan x="99.54" y="732" font-family="Avenir-Book, Avenir" font-weight="normal"> ___________(Problem)_______________________</tspan>
                         <tspan x="45" y="769">and you must include</tspan>
