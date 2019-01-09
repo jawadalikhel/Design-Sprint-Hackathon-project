@@ -8,18 +8,19 @@ class Task extends Component{
       task: [
         {persona: 'Astronaut', problem: 'Astronaut House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Robot, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
         {persona: 'FireFighter', problem: 'Firefighter House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Truck, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'persona #1', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #1, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'persona #2', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #2, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'persona #3', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #3, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'persona #4', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #4, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
-        {persona: 'persona #5', problem: 'problem #1:  House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'subject #5, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #1', problem: 'problem #1:', subject: 'subject #1, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #2', problem: 'problem #2:', subject: 'subject #2, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #3', problem: 'problem #3:', subject: 'subject #3, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #4', problem: 'problem #4:', subject: 'subject #4, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'persona #5', problem: 'problem #5:', subject: 'subject #5, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
       ],
       showTask: true,
+      currentPersona: '',
     }
   }
 
   getRandomTask = () =>{
-    const randomTask = [this.state.task[Math.floor(Math.random() * this.state.task.length)]];
+    const randomTask = this.state.task[Math.floor(Math.random() * this.state.task.length)];
     // console.log(randomTask, 'there are all the tasks')
     // randomTask.forEach((index) =>{
     //   console.log(index, 'this is index')
@@ -28,12 +29,37 @@ class Task extends Component{
     // console.log(randomTask[0].persona, 'persona');
     // console.log(randomTask[0].problem, 'problem');
     // console.log(randomTask[0].subject, 'subject');
+    this.setState({
+      currentPersona: randomTask,
+    })
+
+
   }
 
   render(){
     return(
       <div>
         <h1 id="empathizeHeader">Empathize & Define</h1>
+
+        <div id="Trow">
+          <div id="Tcolumn" >
+            <h2>Persona</h2>
+            <h1 className="TquextionMark">?</h1>
+            <p className="info">{this.state.currentPersona.persona}</p>
+          </div>
+
+          <div id="Tcolumn" >
+            <h2>Problem</h2>
+            <h1 className="TquextionMark">?</h1>
+            <p className="info">{this.state.currentPersona.problem}</p>
+          </div>
+
+          <div id="Tcolumn" >
+            <h2>Subject</h2>
+            <h1 className="TquextionMark">?</h1>
+            <p className="info">{this.state.currentPersona.subject}</p>
+          </div>
+        </div>
 
         {/* this button is to shhuffle the cards randomly */}
         <button className='shuffle' onClick={this.getRandomTask}>SHUFFLE</button>
