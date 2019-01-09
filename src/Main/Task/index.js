@@ -21,10 +21,6 @@ class Task extends Component{
 
   getRandomTask = () =>{
     const randomTask = this.state.task[Math.floor(Math.random() * this.state.task.length)];
-    // console.log(randomTask, 'there are all the tasks')
-    // randomTask.forEach((index) =>{
-    //   console.log(index, 'this is index')
-    // })
     console.log(randomTask, '<---- random NEW task');
     // console.log(randomTask[0].persona, 'persona');
     // console.log(randomTask[0].problem, 'problem');
