@@ -65,11 +65,11 @@ class Task extends Component{
                 <g id="3)-Empathize,-Define" transform="translate(-44.000000, -674.000000)" fill="#4A4A4A">
                     <text id="Your-task-is-to-help">
                         <tspan x="45" y="695">Your task is to help</tspan>
-                        <tspan x="286.461" y="695" font-family="Avenir-Book, Avenir" font-weight="normal"> ____(Persona)________________</tspan>
+                        <tspan x="286.461" y="695" font-family="Avenir-Book, Avenir" font-weight=""> {this.state.currentPersona.persona} </tspan>
                         <tspan x="45" y="732">with</tspan>
-                        <tspan x="99.54" y="732" font-family="Avenir-Book, Avenir" font-weight="normal"> ___________(Problem)_______________________</tspan>
+                        <tspan x="99.54" y="732" font-family="Avenir-Book, Avenir" font-weight=""> {this.state.currentPersona.problem}</tspan>
                         <tspan x="45" y="769">and you must include</tspan>
-                        <tspan x="314.001" y="769" font-family="Avenir-Book, Avenir" font-weight="normal"> ________(Subject)___________</tspan>
+                        <tspan x="314.001" y="769" font-family="Avenir-Book, Avenir" font-weight="">{this.state.currentPersona.subject}</tspan>
                         <tspan x="45" y="806">in your design solution.</tspan>
                     </text>
                 </g>
