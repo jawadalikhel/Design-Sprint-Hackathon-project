@@ -3,12 +3,13 @@
   /* position: fixed; */
   border: 1px solid black;
   border-radius: 1em;
-  /* background-color: lightblue; */
+  background-color: white;
   width: 48em;
   height: 55em;
   margin: auto;
   margin-top: 1em;
   /* margin-left: 26% */
+
 }
 
 .App-logo {

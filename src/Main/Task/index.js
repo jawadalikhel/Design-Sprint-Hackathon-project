@@ -2,46 +2,73 @@ import React, {Component} from 'react';
 import './style.css';
 
 class Task extends Component{
+  constructor(){
+    super();
+    this.state = {
+      task: [
+        {persona: 'Astronaut', problem: 'Astronaut House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Robot, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'FireFighter', problem: 'Firefighter House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Truck, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+        {persona: 'Doctor', problem: 'Doctor House Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do', subject: 'Surgery, Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do'},
+      ],
+      showTask: true,
+    }
+  }
+
+  getRandomTask = () =>{
+    const randomTask = this.state.task[Math.floor(Math.random() * this.state.task.length)];
+    // console.log(randomTask, 'there are all the tasks')
+    // randomTask.forEach((index) =>{
+    //   console.log(index, 'this is index')
+    // })
+    console.log(randomTask, '<---- random NEW task');
+    console.log(randomTask.persona);
+    console.log(randomTask.problem);
+    console.log(randomTask.subject);
+
+    return(
+      <div id="Trow">
+        <div id="Tcolumn" >
+          <h2>radnomTask.persona</h2>
+          <h1 className="TquextionMark">?</h1>
+          <p className="info">Astronaut<br/>
+            Lorem ipsum dolor sit
+            amet, consectetur adip
+            iscing elit, sed do
+          </p>
+        </div>
+
+        <div id="Tcolumn" >
+          <h2>Problem</h2>
+          <h1 className="TquextionMark">?</h1>
+          <p className="info">Astronaut<br/>
+          House
+            Lorem ipsum dolor sit
+            amet, consectetur adip
+            iscing elit, sed do
+          </p>
+        </div>
+
+        <div id="Tcolumn" >
+          <h2>Subject</h2>
+          <h1 className="TquextionMark">?</h1>
+          <p className="info">
+            Robot,<br/>
+            Lorem ipsum dolor sit
+            amet, consectetur adip
+            iscing elit, sed do
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   render(){
     return(
       <div>
         <h1 id="empathizeHeader">Empathize & Define</h1>
-        <div id="Trow">
-          <div id="Tcolumn" >
-            <h2>Persona</h2>
-            <h1 className="TquextionMark">?</h1>
-            <p className="info">Astronaut<br/>
-              Lorem ipsum dolor sit
-              amet, consectetur adip
-              iscing elit, sed do
-            </p>
-          </div>
-
-          <div id="Tcolumn" >
-            <h2>Problem</h2>
-            <h1 className="TquextionMark">?</h1>
-            <p className="info">Astronaut<br/>
-            House
-              Lorem ipsum dolor sit
-              amet, consectetur adip
-              iscing elit, sed do
-            </p>
-          </div>
-
-          <div id="Tcolumn" >
-            <h2>Subject</h2>
-            <h1 className="TquextionMark">?</h1>
-            <p className="info">
-              Robot,<br/>
-              Lorem ipsum dolor sit
-              amet, consectetur adip
-              iscing elit, sed do
-            </p>
-          </div>
-        </div>
 
         {/* this button is to shhuffle the cards randomly */}
-        <button className='shuffle'>SHUFFLE</button>
+        <button className='shuffle' onClick={this.getRandomTask}>SHUFFLE</button>
 
 
         <svg className="fillIn" width="644px" height="139px" viewBox="0 0 644 139">
@@ -68,3 +95,39 @@ class Task extends Component{
 }
 
 export default Task;
+
+
+
+// <div id="Trow">
+//   <div id="Tcolumn" >
+//     <h2>Persona</h2>
+//     <h1 className="TquextionMark">?</h1>
+//     <p className="info">Astronaut<br/>
+//       Lorem ipsum dolor sit
+//       amet, consectetur adip
+//       iscing elit, sed do
+//     </p>
+//   </div>
+//
+//   <div id="Tcolumn" >
+//     <h2>Problem</h2>
+//     <h1 className="TquextionMark">?</h1>
+//     <p className="info">Astronaut<br/>
+//     House
+//       Lorem ipsum dolor sit
+//       amet, consectetur adip
+//       iscing elit, sed do
+//     </p>
+//   </div>
+//
+//   <div id="Tcolumn" >
+//     <h2>Subject</h2>
+//     <h1 className="TquextionMark">?</h1>
+//     <p className="info">
+//       Robot,<br/>
+//       Lorem ipsum dolor sit
+//       amet, consectetur adip
+//       iscing elit, sed do
+//     </p>
+//   </div>
+// </div>
